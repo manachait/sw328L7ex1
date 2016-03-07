@@ -19,7 +19,7 @@ function onError(e){
 	alert("Error " + e.code + e.message);
 }
 function onSuccess(position){
-    var output = output + 'Latitude: ' + position.coords.latitude + '<br>' + 'Longitude: ' + position.coords.longitude + '<br><hr/>';
+    output = output + 'Latitude: ' + position.coords.latitude + '<br>' + 'Longitude: ' + position.coords.longitude + '<br><hr/>';
 	
 	$("#result").html(output);
 }
