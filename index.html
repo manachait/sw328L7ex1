@@ -10,6 +10,7 @@ function init(){
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
+	$("#checkdevice").html("Device Ready !!!");
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }
 function onError(e){
