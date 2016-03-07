@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.geolocation1" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Working with getCurrentPosition</name>
+<widget id="com.phonegap.geolocation2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Working with watchPosition</name>
     <description>
-        Sample application that shows how to working with getCurrentPosition.
+        Sample application that shows how to working with watchPosition.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
@@ -15,4 +15,9 @@
     <preference name="fullscreen" value="true" />
     <preference name="android-minSdkVersion" value="7" />
 	<plugin name="org.apache.cordova.geolocation" />
+    <icon src="icon.png" platform="android" qualifier="ldpi" />
+    <icon src="icon.png" platform="android" qualifier="mdpi" />
+    <icon src="icon.png" platform="android" qualifier="hdpi" />
+    <icon src="icon.png" platform="android" qualifier="xhdpi" />
+    <icon src="icon.png" platform="android" qualifier="xxhdpi" />	
 </widget>

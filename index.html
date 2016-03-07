@@ -11,13 +11,15 @@ function init(){
 }
 function onDeviceReady(){
 	$("#checkdevice").html("Device Ready !!!");
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+	var options = {maximumAge: 3000, timeout: 5000, enableHighAccuracy: true};
+    navigator.geolocation.watchPosition(onSuccess, onError, options);
 }
 function onError(e){
 	alert("Error " + e.code + e.message);
 }
 function onSuccess(position){
-    var output = 'Latitude: ' + position.coords.latitude + '<br>' + 'Longitude: ' + position.coords.longitude + '<br>';
+    var output = 'Latitude: ' + position.coords.latitude + '<br>' + 'Longitude: ' + position.coords.longitude + '<br><hr/>' +  + $("#result").html();
+	
 	$("#result").html(output);
 }
 </script>
