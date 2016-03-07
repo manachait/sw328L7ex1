@@ -10,7 +10,7 @@ function init(){
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
-    navigatorgeolocation.getCurrentPosition(onSuccess, onError);
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }
 function onError(e){
 	alert("Error " + e.code + e.message);
