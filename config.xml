@@ -14,7 +14,7 @@
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
     <preference name="android-minSdkVersion" value="7" />
-	<plugin name="org.apache.cordova.geolocation" />
+	<plugin name="org.apache.cordova.network-information" />
     <icon src="icon.png" platform="android" qualifier="ldpi" />
     <icon src="icon.png" platform="android" qualifier="mdpi" />
     <icon src="icon.png" platform="android" qualifier="hdpi" />
